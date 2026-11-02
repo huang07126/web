@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="description"
+        content="Volunteer with InTouch Foundation. See the volunteer roles available, what a shift looks like, and how to sign up.">
+    <title>Volunteer | InTouch Foundation (Student Redesign)</title>
+    <link rel="stylesheet" href="Intouch.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-header__inner container">
+            <a class="site-logo" href="index.html" aria-label="InTouch Foundation home">
+                <img class="site-logo__img" src="redesign/image.jpg" alt="">
+            </a>
+            <nav class="main-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="WELCOME.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="volunteer.html" aria-current="page">Volunteer</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="container">
+            <h1 class="page-title">Volunteer with us</h1>
+            <p class="page-intro">Volunteers are the heart of InTouch Foundation. Whether you can offer one evening a
+                month or several shifts a week, there is a role that fits.</p>
+
+            <section aria-labelledby="roles-heading">
+                <h2 id="roles-heading">Volunteer roles</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Mobile kitchen team</h3>
+                        <p>Help prepare meals, ride along on the kitchen van and serve food on the routes. The most
+                            direct way to meet the people we support.</p>
+                        <p><strong>Time:</strong> One evening shift, about 4 hours.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Kitchen prep volunteer</h3>
+                        <p>Work in the kitchen at our Bradford base preparing meals during the afternoon. Great if you
+                            prefer not to be out on the streets.</p>
+                        <p><strong>Time:</strong> Afternoon shifts, about 3 hours.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Driver</h3>
+                        <p>Drive the mobile kitchen van on its route. A clean licence and willingness to drive in winter
+                            conditions are essential.</p>
+                        <p><strong>Time:</strong> One evening shift, about 4 hours.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Community advocate</h3>
+                        <p>Speak about our work at schools, faith groups, workplaces and community events. We provide a
+                            short induction and slide deck.</p>
+                        <p><strong>Time:</strong> Flexible.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Fundraiser</h3>
+                        <p>Help organise a coffee morning, sponsored walk, quiz night or other fundraising event. We
+                            support you all the way.</p>
+                        <p><strong>Time:</strong> Flexible.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Admin support</h3>
+                        <p>Help with data entry, donor letters, the volunteer rota and other behind-the-scenes work. Can
+                            be done from home.</p>
+                        <p><strong>Time:</strong> A few hours a week.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section aria-labelledby="how-heading">
+                <h2 id="how-heading">How sign-up works</h2>
+                <ol class="styled-list">
+                    <li>Fill in the volunteer interest form below.</li>
+                    <li>Our coordinator Priya will email you within five working days.</li>
+                    <li>You will be invited to a friendly one-hour induction at our Bradford base.</li>
+                    <li>Once you have completed the induction, you can pick shifts from our weekly rota.</li>
+                </ol>
+            </section>
+
+            <section aria-labelledby="form-heading">
+                <h2 id="form-heading">Volunteer interest form</h2>
+                <p>Please fill in the form below. Fields marked with <span class="required-mark"
+                        aria-hidden="true">*</span> are required.</p>
+
+                <form action="#" method="post" novalidate>
+                    <fieldset>
+                        <legend>Your details</legend>
+
+                        <div class="form-row">
+                            <label for="name">Full name <span class="required-mark" aria-hidden="true">*</span></label>
+                            <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">Email address <span class="required-mark"
+                                    aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" required aria-required="true"
+                                autocomplete="email" aria-describedby="email-help">
+                            <span class="help-text" id="email-help">We will use this to send you the induction
+                                invitation.</span>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="phone">Phone number</label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="postcode">Postcode</label>
+                            <input type="text" id="postcode" name="postcode" autocomplete="postal-code"
+                                aria-describedby="postcode-help">
+                            <span class="help-text" id="postcode-help">We use this to suggest the closest route to
+                                you.</span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Which role interests you?</legend>
+                        <div class="checkbox-group">
+                            <div>
+                                <input type="checkbox" id="role-kitchen" name="roles" value="kitchen">
+                                <label for="role-kitchen">Mobile kitchen team</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="role-prep" name="roles" value="prep">
+                                <label for="role-prep">Kitchen prep volunteer</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="role-driver" name="roles" value="driver">
+                                <label for="role-driver">Driver</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="role-advocate" name="roles" value="advocate">
+                                <label for="role-advocate">Community advocate</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="role-fundraiser" name="roles" value="fundraiser">
+                                <label for="role-fundraiser">Fundraiser</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="role-admin" name="roles" value="admin">
+                                <label for="role-admin">Admin support</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Availability</legend>
+                        <div class="radio-group">
+                            <div>
+                                <input type="radio" id="avail-week" name="availability" value="weekday">
+                                <label for="avail-week">Weekday evenings</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="avail-end" name="availability" value="weekend">
+                                <label for="avail-end">Weekends</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="avail-flex" name="availability" value="flexible">
+                                <label for="avail-flex">Flexible</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-row">
+                        <label for="message">Anything else you would like to tell us?</label>
+                        <textarea id="message" name="message" aria-describedby="message-help"></textarea>
+                        <span class="help-text" id="message-help">For example, any access needs we should know about, or
+                            any past volunteer experience.</span>
+                    </div>
+
+                    <p><em>Note: this form is illustrative only. In the live site it would post securely to our office
+                            system.</em></p>
+
+                    <button type="submit" class="btn btn--primary">Send my interest form</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h2>InTouch Foundation</h2>
+                <p>Registered charity working across Yorkshire to support people experiencing homelessness.</p>
+            </div>
+            <div>
+                <h2>Explore</h2>
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="projects.html">Our projects</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contact</h2>
+                <address>
+                    51 Jervaulx Crescent<br>
+                    Bradford, BD8 8JD<br>
+                    <a href="tel:03333350403">0333 335 0403</a><br>
+                    <a href="mailto:info@intouchfoundation.co.uk">info@intouchfoundation.co.uk</a>
+                </address>
+            </div>
+            <div>
+                <h2>Follow us</h2>
+                <ul class="social-list">
+                    <li><a href="https://x.com/Intouchbradford" class="icon brands fa-twitter"><span
+                                class="label"></span></a></li>
+                    <li><a href="https://www.facebook.com/IntouchfoundationUK/" class="icon brands fa-facebook-f"><span
+                                class="label"></span></a></li>
+                    <li><a href="https://www.instagram.com/intouchfoundationuk" class="icon brands fa-instagram"><span
+                                class="label"></span></a></li>
+                    <li><a href="https://www.youtube.com/user/InTouchFoundation" class="icon brands fa-youtube"><span
+                                class="label"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 InTouch Foundation (student redesign coursework). Not affiliated with the charity.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
