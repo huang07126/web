@@ -1,0 +1,112 @@
+body {
+	font-family: Verdana, sans-serif;
+}
+
+h1,h2,h3,h4 {
+	font-family: Georgia, serif;
+}
+
+#skip-links {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+#skip-links a {
+	color: white;
+}
+
+#wrapper {
+	width: 90%;
+	margin: 5px auto;
+	padding: 5px 30px;
+	border: solid 1px rgb(92, 204, 241);
+	border-collapse: collapse;
+	color: #4210b7;
+}
+
+#header {
+	width: 100%;
+}
+
+#navigation {
+	list-style-type: none;
+	clear: both;
+	padding: 5px 15px;
+	margin: 0 -30px;
+	list-style-type: none;
+	background-color: rgb(41, 77, 111);
+	color: white;
+}
+
+.primarynav {
+	display: inline-block;
+	padding: 2px 10px;
+	text-align: center;
+}
+
+.primarynav a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 4px;
+}
+
+.primarynav a: hover {
+	text-decoration: underline;
+	background-color: #5B5B5B;
+}
+
+.current {
+	border-bottom: solid 3px white;
+}
+
+#content {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#main-content {
+	width: 77%;
+	float: left;
+	margin: 0;
+	padding: 0 1% 0 0;
+}
+
+#secondary-content {
+	width: 20%;
+	float: left;
+	margin: 3.5em 0;
+	padding: 0 1%;
+	background-color: #6c8fd0;
+	color: white;
+}
+
+#footer {
+	width: 100%;
+	clear: both;
+	color: #47b3c6;
+}
+
+h2,h4 {
+	color: rgb(149, 232, 236);
+}
+
+.textbox {
+	position: absolute;
+	line-height: 125%;
+	left: 240px;
+	width: 320px;
+}
+
+.textfield {
+	position: absolute;
+	left: 240px;
+	width: 320px;
+	height: 120px;
+	display: inline;
+}

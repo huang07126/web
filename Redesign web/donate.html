@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="description"
+        content="Donate to InTouch Foundation. See where your money goes and choose a one-off gift or a monthly donation that suits you.">
+    <title>Donate | InTouch Foundation (Student Redesign)</title>
+    <link rel="stylesheet" href="Intouch.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-header__inner container">
+            <a class="site-logo" href="index.html" aria-label="InTouch Foundation home">
+                <img class="site-logo__img" src="redesign/image.jpg" alt="">
+            </a>
+            <nav class="main-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="WELCOME.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="donate.html" aria-current="page">Donate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="container">
+            <h1 class="page-title">Donate</h1>
+            <p class="page-intro">Your donation will enable our work to continue, together we can find new ways to
+                prevent homelessness and feed the hungry.</p>
+
+            <section aria-labelledby="impact-heading">
+                <h2 id="impact-heading">What your donation pays for</h2>
+                <p>We publish the average cost of each part of our work, so you can see where your money goes.</p>
+                <div class="donate-grid">
+                    <article class="donate-option">
+                        <p class="donate-option__amount">&pound;2.50</p>
+                        <p class="donate-option__desc">Pays for one hot meal, served on a mobile kitchen route.</p>
+                        <a class="btn btn--primary" href="#donate-form">Give &pound;2.50</a>
+                    </article>
+                    <article class="donate-option">
+                        <p class="donate-option__amount">&pound;5 / month</p>
+                        <p class="donate-option__desc">Sponsors two meals every month and helps us plan ahead.</p>
+                        <a class="btn btn--primary" href="#donate-form">Give &pound;5 monthly</a>
+                    </article>
+                    <article class="donate-option">
+                        <p class="donate-option__amount">&pound;30</p>
+                        <p class="donate-option__desc">Funds an emergency winter pack (blanket, hat, gloves, hot meal).
+                        </p>
+                        <a class="btn btn--primary" href="#donate-form">Give &pound;30</a>
+                    </article>
+                </div>
+            </section>
+
+            <section aria-labelledby="other-heading">
+                <h2 id="other-heading">Other ways to give</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Standing order</h3>
+                        <p>Set up a regular gift directly through your bank. Get in touch and we will send you the
+                            details.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Payroll giving</h3>
+                        <p>Give a tax-free amount each month from your salary. We can write to your employer to set this
+                            up.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Leave a gift in your will</h3>
+                        <p>A gift in your will helps us plan for the long term. Our team can talk you through the
+                            options.</p>
+                    </article>
+                    <article class="card">
+                        <h3>In memory</h3>
+                        <p>Many people give to InTouch in memory of a loved one. We can set up a personal tribute page.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="donate-form" aria-labelledby="form-heading">
+                <h2 id="form-heading">Make a donation</h2>
+                <p>This is an illustrative form. In the live site it would link to a secure payment provider. Fields
+                    marked with <span class="required-mark" aria-hidden="true">*</span> are required.</p>
+
+                <form action="#" method="post" novalidate>
+                    <fieldset>
+                        <legend>Choose an amount</legend>
+                        <div class="radio-group">
+                            <div>
+                                <input type="radio" id="amount-1" name="amount" value="2.50">
+                                <label for="amount-1">&pound;2.50 (one meal)</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="amount-2" name="amount" value="10">
+                                <label for="amount-2">&pound;10</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="amount-3" name="amount" value="30">
+                                <label for="amount-3">&pound;30 (winter pack)</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="amount-4" name="amount" value="other">
+                                <label for="amount-4">Other amount</label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="custom-amount">Other amount (&pound;)</label>
+                            <input type="text" id="custom-amount" name="custom-amount" inputmode="decimal"
+                                aria-describedby="custom-help">
+                            <span class="help-text" id="custom-help">Leave blank if you have picked a fixed amount
+                                above.</span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>How often?</legend>
+                        <div class="radio-group">
+                            <div>
+                                <input type="radio" id="freq-once" name="frequency" value="once" checked>
+                                <label for="freq-once">One-off donation</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="freq-month" name="frequency" value="monthly">
+                                <label for="freq-month">Monthly donation</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Your details</legend>
+
+                        <div class="form-row">
+                            <label for="donor-name">Full name <span class="required-mark"
+                                    aria-hidden="true">*</span></label>
+                            <input type="text" id="donor-name" name="name" required aria-required="true"
+                                autocomplete="name">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="donor-email">Email address <span class="required-mark"
+                                    aria-hidden="true">*</span></label>
+                            <input type="email" id="donor-email" name="email" required aria-required="true"
+                                autocomplete="email">
+                        </div>
+
+                        <div class="form-row">
+                            <input type="checkbox" id="gift-aid" name="gift-aid" value="yes">
+                            <label for="gift-aid">I am a UK taxpayer and I would like Gift Aid added to my
+                                donation.</label>
+                            <span class="help-text">Gift Aid adds 25p for every &pound;1 you give, at no extra cost to
+                                you.</span>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="btn btn--primary">Continue to secure payment</button>
+                </form>
+            </section>
+
+            <section class="highlight-band" aria-labelledby="thanks-heading">
+                <div class="container">
+                    <h2 id="thanks-heading">Thank you</h2>
+                    <p>Whether you give a pound or a thousand, your support keeps the kitchens running. We could not do
+                        this work without you.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h2>InTouch Foundation</h2>
+                <p>Registered charity working across Yorkshire to support people experiencing homelessness.</p>
+            </div>
+            <div>
+                <h2>Explore</h2>
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="projects.html">Our projects</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contact</h2>
+                <address>
+                    51 Jervaulx Crescent<br>
+                    Bradford, BD8 8JD<br>
+                    <a href="tel:03333350403">0333 335 0403</a><br>
+                    <a href="mailto:info@intouchfoundation.co.uk">info@intouchfoundation.co.uk</a>
+                </address>
+            </div>
+            <div>
+                <h2>Follow us</h2>
+                <ul class="social-list">
+                    <li><a href="https://x.com/Intouchbradford" class="icon brands fa-twitter"><span
+                                class="label"></span></a></li>
+                    <li><a href="https://www.facebook.com/IntouchfoundationUK/" class="icon brands fa-facebook-f"><span
+                                class="label"></span></a></li>
+                    <li><a href="https://www.instagram.com/intouchfoundationuk" class="icon brands fa-instagram"><span
+                                class="label"></span></a></li>
+                    <li><a href="https://www.youtube.com/user/InTouchFoundation" class="icon brands fa-youtube"><span
+                                class="label"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 InTouch Foundation (student redesign coursework). Not affiliated with the charity.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
